@@ -9,12 +9,12 @@
 	<style>
 		:root {
 			--off-white: #f5f5f5;
-			--primary: #000000;
-			--secondary: #941B0C;
-			--tercerary: #BC3908;
-			--quartary: #F6AA1C;
-			--quintary: #226F54;
 			--off-black: #212121;
+			--primary: #93401a;
+			--secondary: #dd6c3c;
+			--tercerary: #d95f26;
+			--quartary: #1fb2a8;
+			--quintary: #26d9c7;
 		}
 
 		#html {
@@ -33,7 +33,6 @@
 			flex-direction: column;
 			align-items: center;
 			padding: 1rem;
-			background-color: var(--quartary);
 			margin: 1rem 0rem;
 			height: 50vh;
 		}
@@ -371,6 +370,17 @@
 			width: 90%;
 		}
 
+		.nav_item {
+			color: var(--off-white);
+			text-decoration: none;
+			transition: transform 0.2s;
+		}
+
+		.nav_item:hover {
+			transform: scale(1.15);
+			z-index: 1000;
+		}
+
 		@media (max-width: 1024px) {
 			#header {
 				display: flex;
@@ -403,6 +413,7 @@
 			#element_3217d3b53ab84af5 {
 				display: flex;
 				flex-direction: column;
+				padding: 0px;
 			}
 
 			#element_a8974310d88f4178 {
@@ -473,10 +484,11 @@
 
 <body id="body">
 	<header id="header">
-		<h1 id="element_e10540f8ebc84675"> Ivy Web Design </h1> <a id="element_a8974310d88f4178" class="nav_items">
-			Pricing </a> <a id="element_17eedd562dd545fc" class="nav_items"> Portfolio </a> <a
-			id="element_c4dee525c3cc437c" class="nav_items"> Contact </a> <a id="element_afedc5d6de734081"
-			class="nav_items"> About </a>
+		<h1 id="element_e10540f8ebc84675"> Ivy Web Design </h1> <a id="element_a8974310d88f4178"
+			class="nav_items nav_item" href="#pricing">
+			Pricing </a> <a id="element_17eedd562dd545fc" class="nav_items nav_item" href="#portfolio"> Portfolio </a>
+		<a id="element_c4dee525c3cc437c" class="nav_items nav_item" href="#contact"> Contact </a> <a
+			id="element_afedc5d6de734081" class="nav_items nav_item" href="#about"> About </a>
 	</header>
 	<div class="spacer" id="element_1e7e79ce710d4f6b"></div>
 	<section id="element_3c3e4dea51d74141">
@@ -529,7 +541,8 @@
 		<section id="details">
 			<div id="element_1494dc1c937e4060">Not every website can be hosted without on going costs. Unfortunately,
 				certain features require what's called a server. This is a computer that stores data
-				for your site. When someone visits your site in a browser like Chrome or Safari, the browser connects to your server to get that data. 
+				for your site. When someone visits your site in a browser like Chrome or Safari, the browser connects to
+				your server to get that data.
 				If your website needs one of the following then you'll need a server:</div>
 			<ul id="element_bf9249d80add476b">
 				<li id="element_17030b5039d740e5"> User accounts </li>
@@ -561,19 +574,20 @@
 				<div id="element_94b333b870114ce3" class="portfolio_elements">
 					<h2 id="element_dc5caebc7714410a">4 Season Windows</h2>
 					<p id="element_7b4095e40b934eaf">A website for a window repair and installation business.</p><a
-						id="element_9f8277bfc3f04af3" class="visit_button" href="https://www.4seasonswindow.com/">Visit
+						id="element_9f8277bfc3f04af3" class="visit_button nav_item"
+						href="https://www.4seasonswindow.com/">Visit
 						↗</a>
 				</div>
 				<div id="element_54f1644e6070471e" class="portfolio_elements">
 					<h2 id="element_c66213532758499d">Bundo</h2>
 					<p id="element_20c0281812e34242">A fintech service for providing protection for loans between
-						friends and family.</p><a id="element_f6037bbd621f4a6d" class="visit_button"
+						friends and family.</p><a id="element_f6037bbd621f4a6d" class="visit_button nav_item"
 						href="https://bundo.me">Visit ↗</a>
 				</div>
 				<div id="element_5c0ae788c5ad476e" class="portfolio_elements">
 					<h2 id="element_b327750fb3e04cc4">Unbounded</h2>
 					<p id="element_cdb945bd54164f6a">A visual website creation tool, allowing the creation of web pages
-						without code. </p><a id="element_f757d9a99dcc4e5c" class="visit_button"
+						without code. </p><a id="element_f757d9a99dcc4e5c" class="visit_button nav_item"
 						href="https://wbf22.github.io/unbounded/Unbounded.html">Visit ↗</a>
 				</div>
 			</div>
@@ -614,6 +628,8 @@
 			</div>
 		</div>
 	</footer>
+
+
 
 
 </body>
